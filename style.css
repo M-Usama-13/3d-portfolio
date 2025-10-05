@@ -81,6 +81,27 @@ header {
     color: #ffffff; /* white text */
 
   }
+
+  .actions {
+    z-index: 9999; /* make sure it's above everything */
+  }
+
+  .contact-btn {
+    background-color: rgba(255, 255, 255, 0.15); /* make slightly more opaque */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff; /* ensure text is white */
+    width: 100%; /* full width buttons for mobile */
+    text-align: center;
+  }
+
+  .contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* lighter on hover */
+  }
+
+  /* Optional: add backdrop blur for nice contrast */
+  .actions {
+    backdrop-filter: blur(8px);
+  }
 }
 
 
@@ -988,3 +1009,6 @@ footer {
   }
 }
 
+a.btn {
+  text-decoration: none;
+}
